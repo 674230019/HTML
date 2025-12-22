@@ -46,6 +46,9 @@
             padding: 12px;
             color: #686868;
         }
+        .note::before {
+            content: "👌";
+        }
 
         pre {
                 background-color: rgb(255, 245, 226);
@@ -55,6 +58,28 @@
             }
 
 
+            .back-link {
+                color: rgb(0, 17, 255);
+                text-decoration: none;
+                background-color: #55fae4;
+                display: inline-block;
+                text-align: center;
+                border-top:4px solid #c900a7;
+            box-shadow: 0 4px 8px red;
+            
+            padding: 4px 24px ;
+            border-radius: 100px;
+            }
+            .back-link:hover {
+                color: red;
+                text-decoration: underline;
+                background-color: #70fa55;
+                border-top:4px solid #1400c9;
+            box-shadow: 0 4px 8px rgb(0, 174, 255);
+            }
+
+
+/* text-decoration:  underline; */
 
     </style>
 </head>
@@ -130,7 +155,7 @@ font-size: 12px;   /* ทำให้ H5 เล็กลงอีก */
 </p>
     </section>
 
-    <a href="index.html">&larr; Back to HTML Tutorial </a>
+    <a href="index.html" class="back-link">&larr; Back to HTML Tutorial </a>
 </div>   
     
 
