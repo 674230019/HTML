@@ -1,0 +1,110 @@
+/* Global CSS Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2;
+  background-color: rgb(228, 217, 219);
+}
+
+html {
+}
+
+/* Container Styles */
+
+.container {
+  max-width: 1200px;
+  margin: 220px auto 40px;
+}
+
+/* Share CSS */
+code {
+  background-color: rgb(204, 204, 204);
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+pre {
+  background-color: rgb(255, 245, 226);
+  padding: 20px;
+  border-left: #ff1bd9 5px solid;
+  font-size: 16px;
+}
+
+.badge {
+  background-color: rgb(235, 235, 235);
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: #02129e;
+  font-size: 16px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.card {
+  background-color: aliceblue;
+  padding: 20px 40px;
+  border-radius: 15px;
+  border-top: 4px solid #c900a7;
+  box-shadow: 0 4px 8px red;
+  margin: 40px 0px;
+}
+
+.note {
+}
+
+/* Group1 : Header Styles */
+header {
+  background-color: rgb(230, 230, 230);
+  padding: 20px;
+  box-shadow: 2px 2px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.list-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.list-menu li {
+  background-color: orange;
+  padding: 10px 15px;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+.list-menu li:hover {
+  background-color: rgb(0, 162, 255);
+}
+.list-menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+h1 {
+  color: #ff0000;
+}
+/* Group3 : */
+
+/* Group4 : */
+
+/* Group5 : */
+
+/* Group6 : */
+
+/* Group7 : */
+
+/* Group8 : */
+
+/* Group9 : */
+
+/* Group10 : */
