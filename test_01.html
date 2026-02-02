@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test_01</title>
+    <style>
+        body {
+                margin: 0px;
+                padding: 0px;
+                line-height: 1.7;
+                background-color: rgb(154, 66, 255);
+        }
+
+        header {
+        background-color: rgb(45, 68, 117);
+        padding: 20px;
+        box-shadow: 2px 2px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+}
+
+        .container {
+        max-width: 1200px;
+        margin: 220px auto 40px;
+}
+
+
+        .card {
+            background-color: aliceblue;
+            padding: 20px 40px;
+            border-radius: 15px;
+            margin: 40px 0px;
+        }
+
+        .card2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        display: flex;
+        gap: 20px;
+
+            /* background-color: rgb(0, 217, 255);
+            padding: 20px;
+        box-shadow: 2px 2px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 150; */
+        /* position: fixed; */
+        /* top: 0; */
+        /* width: 100%; */
+        }
+        .card2 li {
+        margin: 15px;
+}
+
+.card2 li:hover {
+        /* transform: translateY(-6px); */
+     border-radius: 12px;
+        box-shadow: 0 2px 8px yellow;
+        /* transition: transform 0.3s ease; */
+}
+
+.card2 h3 {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  background: linear-gradient(135deg, rgb(18, 175, 248), rgb(31, 178, 247));
+  /* box-shadow: 0 2px 6px rgb(0, 0, 0); */
+  padding: 16px 24px;
+  border-radius: 12px;
+}
+
+
+
+.list-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        display: flex;
+        gap: 20px;
+}
+.list-menu li {
+        margin-top: 15px;
+}
+
+.list-menu li:hover {
+        transform: translateY(-6px);
+        transition: transform 0.3s ease;
+}
+.list-menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  background: linear-gradient(135deg, rgb(18, 175, 248), rgb(31, 178, 247));
+  box-shadow: 0 2px 6px rgb(0, 0, 0);
+  padding: 16px 24px;
+  border-radius: 12px;
+}
+
+
+.list-menu a:hover {
+  background: linear-gradient(135deg, rgb(247, 79, 79), rgb(255, 0, 0));
+}
+
+
+
+        .card3 {
+            background-color: rgb(255, 145, 0);
+            background: linear-gradient(135deg, rgb(247, 174, 79), rgb(255, 159, 159));
+            padding: 20px 40px;
+            border-radius: 15px;
+            width: 60%;
+            margin: 20px auto;
+        }
+
+        /* .card3 li {
+  margin-top: 15px;
+}
+
+        .card3 li:hover {
+  transform: translateY(-6px);
+  transition: transform 0.3s ease;
+}
+.card3 a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  background: linear-gradient(135deg, rgb(73, 0, 0), rgb(255, 159, 159));
+  box-shadow: 0 2px 6px rgb(0, 0, 0);
+  padding: 8px 16px;
+  border-radius: 12px;
+}
+.card3 a:hover {
+  background: linear-gradient(135deg, rgb(247, 79, 79), rgb(255, 0, 0));
+} */
+
+        .card4{
+            background-color: red;
+            box-shadow: yellow 0 2px 9px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 15px;
+            
+        }
+
+        .back {
+            background-color: aliceblue;
+            padding: 20px 40px;
+            border-radius: 15px;
+            border:4px solid #000000;
+        }
+        img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 999px;
+        margin: 0 auto;
+        text-align: center;
+}
+    .card5{
+background-color: rgb(45, 68, 117);
+        margin: 30px;
+        padding: 20px;
+        box-shadow: 2px 2px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        /* position: fixed; */
+        top: 0;
+        width: 100%;
+}
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📕 รายงานผลเกรด</h1>
+    </header>
+    <div class="container">
+
+        <div class="card">
+                <ul class="list-menu">  
+                
+                <!-- <p>🪪ข้อมูลนักศึกษา</p> -->
+                <li><a href="#c1">🪪ข้อมูลนักศึกษา</a></li>
+                
+                <!-- <p>👨‍🎓ผลการเรียน</p> -->
+                <li><a href="#c2">👨‍🎓ผลการเรียน</a></li>
+                
+                
+                <!-- <p>📞ติดต่อ</p> -->
+                <li><a href="#c3">📞ติดต่อ</a></li>
+                
+                </ul>
+
+            <!-- <div class="card2">
+                <a href="">👨‍🎓ผลการเรียน</a>
+            </div>
+
+            <div class="card2">
+                <a href="">📞ติดต่อ</a>
+            </div> -->
+        
+    </div>
+        <div class="card">
+            
+            <div class="card3" id="c1">
+                <h2 id="ts"> 🧖Mr.Natdanai Mahathai </h2>
+                <p>🔑รหัสนักศึกษา : 674230019</p>
+                <p>♟️ชื่อ-นามสกุล : นัฐดนัย มหาไทย</p>
+                <p>🎓หมู่เรียน : 67/44</p>
+                <p>👨‍🏫อาจารที่ปรึกษา : อ.สุขสวัสดิ์ แซ่ลิ่ม</p>
+                <p>🔗GitHub : https://674230019.github.io/HTML/</p>
+                <p></p>
+            </div>
+            <img src="data:image/jpg;base64,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" alt="1">
+        </div>
+            <ul class="card2" id="c2">
+                <li><h3>📗ปี 1 เทอม 1 : 2.86 </h3></li>
+                <li><h3>📘ปี 1 เทอม 2 : 2.96 </h3></li>
+                <li><h3>📙ปี 2 เทอม 1 : 3.16 </h3></li>
+            </ul>
+        <!-- <p>📗ปี 1 เทอม 1 : </p>
+        <p>📘ปี 1 เทอม 2 : </p>
+        <p>📙ปี 2 เทอม 1 : </p> -->
+        <!-- <div class="card2">
+        </div>
+
+        <div class="card2">
+        </div>
+
+        <div class="card2">
+        </div> -->
+
+
+    <div class="card4"><h1>🏆เกรดเฉลี่ยสสม : 2.97</h1></div>
+    <div class="card5" id="c3">
+        <p>©️ 2024 webmaster By Natdanai Mahathai ID 674230019</p>
+        <p>🏠 Nakhon Pathom Rajabhat University</p>
+    </div>
+
+    </div>
+</body>
+</html>
