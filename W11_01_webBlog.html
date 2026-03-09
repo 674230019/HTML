@@ -43,14 +43,19 @@
     <!-- Navbar -->
     <nav class="main-nav">
         <div class="wrapper">
-            <ul class="nav-menu">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">AI Technology</a></li>
-                <li><a href="#">Machine Learning</a></li>
-                <li><a href="#">Deep Learning</a></li>
-                <li><a href="#">AI Tools</a></li>
-                <li><a href="#">AI News</a></li>
-            </ul>
+            <div id="hamburger-menu">
+                <span></span>
+            </div>
+            <div id="menu">
+                <ul class="nav-menu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">AI Technology</a></li>
+                    <li><a href="#">Machine Learning</a></li>
+                    <li><a href="#">Deep Learning</a></li>
+                    <li><a href="W05_01_link.html">AI Tools</a></li>
+                    <li><a href="#contact">AI News</a></li>
+                </ul>
+                </div>
         </div>
 
 
@@ -129,7 +134,7 @@
                 <main class="post-list">
                     <!-- card 1 = Image -->
 
-                    <div class="card">
+                    <div class="card order-box-image">
                         <p>CATEGORY ARCHIVES: <strong>RESPONSIVE DESIGN</strong> </p>
 
                         <div class="post-header">
@@ -160,9 +165,9 @@
                         </div>
 
                     </div>
-                    <!-- card 2 = tab -->
+                    <!-- card 2 = table -->
                     <div class="card">
-                        <div class="card">
+                        <div class="card order-box-table">
                             <p>CATEGORY ARCHIVES: <strong>CSS DISPLAY PROPERTY</strong> </p>
 
                             <div class="post-header">
@@ -252,8 +257,8 @@
                         </div>
                     </div>
 
-                    <!-- card 3 = Image -->
-                    <div class="card">
+                    <!-- card 3 = Form -->
+                    <div class="card order-box-form" id="contact">
                         <h2 style="text-align: center;">📞 ติดต่อเรา</h2>
                         <div class="contact-from-main-card">
                             <form action="" method="">
@@ -357,9 +362,9 @@
                 </main>
 
                 <!-- right side -->
-                <aside>
+                <aside class="sideber">
                     <!-- Widget 01 -->
-                    <div class="widget">
+                    <div class="widget order-w-intro">
                         <div class="widget-title">สวัสดีครับ ยินดีต้อนรับ</div>
                         <p class="post-description">
                             ผมชื่อ Suksawat เขียนบล็อกเกี่ยวกับ Startup การตลาด การเขียนโปรแกรม และเทคโนโลยี AI สำหรับ
@@ -372,7 +377,7 @@
                     </div>
                     <!-- Widget 02 -->
 
-                    <div class="widget">
+                    <div class="widget order-w-f-green">
                         <div class="contact-from-right-main-card">
                             <h2 style="text-align: center;">📧 รับข่าวสารใหม่</h2>
                             <div class="">
@@ -409,7 +414,7 @@
 
                     </div>
                     <!-- Widget 03 -->
-                    <div class="widget">
+                    <div class="widget order-w-f-purple">
                         <div class="contact-from-right-main-card2">
                             <h2 style="text-align: center;">💬 ติดต่อด่วน</h2>
                             <div class="">
@@ -441,7 +446,7 @@
 
                     </div>
                     <!-- Widget 04 -->
-                    <div class="widget">
+                    <div class="widget order-w-fb">
 
                         <div class="widget-title">Facebook Like</div>
                         <div class="auther-Facebook">
@@ -454,7 +459,7 @@
 
                     </div>
                     <!-- Widget 05 -->
-                    <div class="widget">
+                    <div class="widget order-w-sp">
 
                         <div class="widget-title">Sponsor</div>
                         <div class="auther-Sponsor">พื้นที่โฆษณา / วิดีโอ</div>
@@ -472,7 +477,7 @@
             =>ราคาทอง <=
 ============================================================ -->
 
-            <div class="card">
+            <div class="card card-margin">
                 <p>CATEGORY ARCHIVES: <strong>RESPONSIVE DESIGN</strong> </p>
 
                 <div class="post-header">
@@ -586,7 +591,27 @@
     </footer>
 
 
+    <script>
+        var burgerMenu = document.getElementById('hamburger-menu');
+        var overlay = document.getElementById('menu');
 
+        burgerMenu.addEventListener('click', function () {
+            this.classList.toggle("close");
+            overlay.classList.toggle("overlay");
+        });
+
+        // ปิดเมนูเมื่อกดลิงก์
+        var menuLinks = document.querySelectorAll('#menu a');
+
+        menuLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                burgerMenu.classList.remove("close");
+                overlay.classList.remove("overlay");
+            });
+        });
+
+
+    </script>
 
 
 </body>
